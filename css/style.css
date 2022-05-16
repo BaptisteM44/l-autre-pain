@@ -1,0 +1,308 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-flo-maderebner-745988.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-flo-maderebner-745988.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.header_container .header_logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav_container .nav_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.nav_container .nav_ul li {
+  text-decoration: none;
+  font-size: clamp(11px, 2vw, 20px);
+  text-transform: uppercase;
+  color: #516079;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.homepage_texte {
+  color: white;
+  font-size: clamp(18px, 4vw, 30px);
+  margin: 40px 20%;
+}
+
+.homepage_content_btn {
+  margin: 40px auto;
+}
+
+button {
+  min-width: 130px;
+  height: 40px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #FFFFFF;
+  overflow: hidden;
+  border: 2px solid #C5C6C6;
+  color: #2E3244;
+}
+
+button:hover {
+  color: #FFFFFF;
+}
+
+button:hover:after {
+  width: 100%;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #516079;
+}
+
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-daria-shevtsova-1070946.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-daria-shevtsova-1070946.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.about h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.about_content_text h3 {
+  color: white;
+  font-size: clamp(18px, 4vw, 30px);
+  border: 1px solid #FFFFFF;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 30px 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+  border-top: 1px solid #FFFFFF;
+  padding: 5px;
+}
+
+.about_text h4 {
+  font-size: 18px;
+  margin: 18px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: #F1895C;
+}
+
+.about_text p {
+  font-size: 14px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.location {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-mariana-kurnyk-1775043.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-mariana-kurnyk-1775043.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 167vh;
+}
+
+.location .location_title {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.vertical-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.location_content_placement {
+  min-width: 50vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location_content_placement:nth-child(even) {
+  background-color: teal;
+  color: white;
+}
+
+.contact {
+  background: url(/images/pexels-markus-spiske-105861.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact .contact_title {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.contact_content {
+  background-color: #FFFFFF;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid #2E3244;
+  opacity: 0.9;
+}
+
+.contact_content_boulanger {
+  margin: 30px 0;
+}
+
+.contact_content_boulanger h3 {
+  font-size: 25px;
+}
+
+.contact_content_boulanger p {
+  text-align: start;
+  margin-top: 5px;
+}
+
+.contact_content_adress {
+  margin: 30px 0;
+}
+
+.contact_content_adress h3 {
+  font-size: 25px;
+}
+
+.contact_content_adress p {
+  text-align: start;
+  margin-top: 5px;
+}
+
+.contact_content_social {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
