@@ -143,12 +143,33 @@ button {
     }
 }
 // END ABOUT
-
 // LOCATION
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	overflow-y: visible;
+	position: relative;
+  height: auto;
+}
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
 .location{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-mariana-kurnyk-1775043.jpg) no-repeat center center fixed;
     background-size: cover;
-    height: 167vh;
     .location_title{
         padding-top: 20px;
         font-size: 40px;
@@ -158,18 +179,20 @@ button {
         text-transform: uppercase;
     }
 }
+.sticky-container{
+    height: 85vh;
+    width: 350%;
+    display: flex;
+    flex-wrap: nowrap;
+    iframe{
+        width: 80%;
+    }
+}
 .vertical-section{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  main {
-    overflow-x: hidden;
-    display: flex;
-    position: sticky;
-    top:0;
   }
   
   h1 {
@@ -178,17 +201,17 @@ button {
   }
   
   .location_content_placement {
-    min-width: 50vw;
-    min-height: 100vh;
+    min-width: 100vw;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .location_content_placement:nth-child(even) {
-    background-color: teal;
-    color: white;
-  }
+//   .location_content_placement:nth-child(even) {
+//     background-color: teal;
+//     color: white;
+//   }
  
 // END LOCATION
 
@@ -215,7 +238,6 @@ button {
     height: auto;
     padding: 10px;
     margin: 20px auto;
-    border: 2px solid $color1;
     opacity: 0.9;
 }
 .contact_content_boulanger{
