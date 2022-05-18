@@ -9,8 +9,8 @@ html {
 }
 
 .header_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-flo-maderebner-745988.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-flo-maderebner-745988.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/photo1.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo1.jpg) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   height: 100vh;
@@ -96,8 +96,8 @@ button:after {
 }
 
 .about {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-daria-shevtsova-1070946.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-daria-shevtsova-1070946.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/photo2.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo2.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -188,8 +188,8 @@ html, body {
 }
 
 .location {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/pexels-mariana-kurnyk-1775043.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/pexels-mariana-kurnyk-1775043.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/photo3.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/photo3.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -241,7 +241,10 @@ h1 {
 
 .location_content_placement {
   min-width: 100vw;
+  width: 100vw;
   min-height: 85vh;
+  padding: 20px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,10 +254,14 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact {
-  background: url(/images/pexels-markus-spiske-105861.jpg) no-repeat center center fixed;
+  background: url(/images/photo4.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -337,6 +344,6 @@ h1 {
 .contact_content_social a {
   text-decoration: none;
   color: #2E3244;
-  font-size: 30px;
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */
