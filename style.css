@@ -28,7 +28,7 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #FFFFFF;
-  height: 40px;
+  height: auto;
   width: 100%;
   margin: 0 auto;
   border-radius: 5px;
@@ -37,8 +37,10 @@ html {
 
 .nav_container .nav_ul a {
   text-decoration: none;
-  font-size: clamp(11px, 2vw, 20px);
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 300;
   text-transform: uppercase;
+  padding: 14px;
   color: #516079;
   margin: auto 0;
   cursor: pointer;
@@ -111,6 +113,7 @@ button:after {
 }
 
 .about h2 {
+  font-weight: 400;
   padding-top: 20px;
   font-size: 40px;
   color: #FFFFFF;
@@ -217,8 +220,25 @@ html, body {
       flex-wrap: nowrap;
 }
 
+.sticky-container h3 {
+  width: 80%;
+  font-size: 25px;
+  font-weight: 200;
+  color: #C5C6C6;
+  border-bottom: 1px solid #C5C6C6;
+}
+
+.sticky-container p {
+  color: #FFFFFF;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+}
+
 .sticky-container iframe {
   width: 80%;
+  height: 80%;
 }
 
 .vertical-section {
@@ -261,8 +281,6 @@ h1 {
 }
 
 .contact {
-  background: url(/images/fourth.jpg) no-repeat center center fixed;
-  background-size: cover;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,7 +310,7 @@ h1 {
   background-color: #FFFFFF;
   width: 300px;
   height: auto;
-  padding: 20px;
+  padding: 5px;
   margin: auto;
   opacity: 1;
 }

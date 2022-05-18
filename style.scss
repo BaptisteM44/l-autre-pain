@@ -31,15 +31,17 @@ html{
         display: flex;
         justify-content:space-around;
         background-color: $color3;
-        height: 40px;
+        height: auto;
         width: 100%;
         margin: 0 auto;
         border-radius: 5px;
         opacity: 0.8;
         a{
             text-decoration: none;
-            font-size: clamp(11px, 2vw, 20px);
+            font-size: clamp(15px, 2vw, 25px);
+            font-weight: 300;
             text-transform: uppercase;
+            padding: 14px;
             color: $color5;
             margin: auto 0;
             cursor: pointer;
@@ -104,6 +106,7 @@ button {
     flex-direction: column;
     text-align: center;
     h2{
+        font-weight: 400;
         padding-top: 20px;
         font-size: 40px;
         color: $color3;
@@ -189,8 +192,23 @@ html, body {
     width: 350%;
     display: flex;
     flex-wrap: nowrap;
+    h3{
+        width: 80%;
+        font-size: 25px;
+        font-weight: 200;
+        color: $color2;
+        border-bottom: 1px solid $color2;
+    }
+    p{
+        color: $color3;
+        width: 80%;
+        font-size: 18px;
+        font-weight: 100;
+        text-align: left;
+    }
     iframe{
         width: 80%;
+        height: 80%;
     }
 }
 .vertical-section{
@@ -220,8 +238,8 @@ html, body {
 
 // CONTACT
 .contact{
-    background: url(/images/fourth.jpg) no-repeat center center fixed;
-    background-size: cover;
+    // background: url(/images/fourth.jpg) no-repeat center center fixed;
+    // background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -240,7 +258,7 @@ html, body {
     background-color: $color3;
     width: 300px;
     height: auto;
-    padding: 20px;
+    padding: 5px;
     margin: auto;
     opacity: 1;
 }
