@@ -1,5 +1,7 @@
 * {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -33,7 +35,7 @@ html {
   opacity: 0.8;
 }
 
-.nav_container .nav_ul li {
+.nav_container .nav_ul a {
   text-decoration: none;
   font-size: clamp(11px, 2vw, 20px);
   text-transform: uppercase;
@@ -132,7 +134,7 @@ button:after {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin: 30px 20px;
+  margin: 20px;
   font-size: 12px;
   color: #FFFFFF;
   -webkit-box-pack: left;
@@ -144,7 +146,8 @@ button:after {
 }
 
 .about_text h4 {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 300;
   margin: 18px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,8 +159,9 @@ button:after {
 }
 
 .about_text p {
-  font-size: 14px;
-  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 8px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,6 +196,7 @@ html, body {
 .location .location_title {
   padding-top: 20px;
   font-size: 40px;
+  font-weight: 400;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,6 +270,7 @@ h1 {
 .contact .contact_title {
   padding-top: 20px;
   font-size: 40px;
+  font-weight: 300;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,11 +283,11 @@ h1 {
 
 .contact_content {
   background-color: #FFFFFF;
-  width: auto;
+  width: 300px;
   height: auto;
-  padding: 10px;
-  margin: 20px auto;
-  opacity: 0.9;
+  padding: 20px;
+  margin: auto;
+  opacity: 1;
 }
 
 .contact_content_boulanger {
@@ -289,34 +295,48 @@ h1 {
 }
 
 .contact_content_boulanger h3 {
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .contact_content_boulanger p {
+  font-weight: 100;
+  font-size: 25px;
   text-align: start;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .contact_content_adress {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .contact_content_adress h3 {
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .contact_content_adress p {
+  font-weight: 100;
+  font-size: 25px;
   text-align: start;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .contact_content_social {
-  margin: 10px;
+  margin: 90px 10px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 20px;
+}
+
+.contact_content_social a {
+  text-decoration: none;
+  color: #2E3244;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
