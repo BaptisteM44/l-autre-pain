@@ -16,7 +16,7 @@ html{
 
 // HEADER
 .header_container{
-    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/first.jpg) no-repeat center center fixed;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/first.jpg) no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     height: 100vh;
@@ -99,7 +99,7 @@ button {
 
 // ABOUT
 .about{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/second.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/second.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -175,7 +175,7 @@ html, body {
 
 
 .location{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/third.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/third.jpg) no-repeat center center fixed;
     background-size: cover;
     .location_title{
         padding-top: 20px;
