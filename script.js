@@ -13,4 +13,3 @@ gsap.to(sections, {
     end: () => "+=" + document.querySelector(".location").offsetWidth
   }
 });
-
