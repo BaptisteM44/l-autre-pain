@@ -54,7 +54,7 @@ html{
 .homepage_texte{
     color: white;
     font-size: clamp(18px, 4vw, 30px);
-    margin: 40px 20%;
+    margin: 100px 20%;
 }
 
 .homepage_content_btn{
@@ -100,7 +100,7 @@ button {
 
 // ABOUT
 .about{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/second.jpg) no-repeat center center fixed;
+    background: linear-gradient(#111, rgba(0, 0, 0, 0.5)), url(images/second.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -118,18 +118,20 @@ button {
     }
 }
 .about_content_text{
+    
+    padding-top: 20px;
     h3{
         color: white;
         font-size: clamp(18px, 4vw, 30px);
-        border: 1px solid $color3;
         margin: 0 auto;
         width: 80%;
+        font-weight: 200;
     }
 }
 .about_text{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 17px;
     font-size: 12px;
     color: $color3;
     border-top: 1px solid $color3;
@@ -137,14 +139,14 @@ button {
     h4{
         font-size: 22px;
         font-weight: 300;
-        margin: 18px 0;
+        margin: 16px 0;
         display: flex;
         justify-content: center;
         color: $color4;
     }
     p{
         font-size: 15px;
-        font-weight: 100;
+        font-weight: 200;
         margin: 8px 0;
         display: flex;
         justify-content: left;
@@ -167,14 +169,6 @@ html, body {
 	overflow-x: hidden;
 	margin: 0;
 }
-
-
-
-
-
-
-
-
 
 .location{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/third.jpg) no-repeat center center fixed;
@@ -199,7 +193,7 @@ html, body {
     flex-wrap: nowrap;
     h3{
         width: 80%;
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 200;
         color: $color2;
         border-bottom: 1px solid $color2;
@@ -210,6 +204,7 @@ html, body {
         font-size: 18px;
         font-weight: 100;
         text-align: left;
+        padding: 10px;
     }
     iframe{
         width: 80%;
@@ -296,7 +291,7 @@ html, body {
     }
 }
 .contact_content_social{
-    margin: 90px 10px 10px 10px;
+    margin: 90px 0px 10px 0px;
     display: flex;
     justify-content: space-around;
     font-size: 20px;
@@ -307,4 +302,69 @@ html, body {
     }
     
 }
+.footer_content{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            padding: 10px;
+        }
+    }
+}
 // END CONTACT
+
+// 
+
+@media screen and (min-width: 1400px) {
+
+    
+  }
+
+  @media screen and (min-width: 1180px) {
+    .sticky-container{
+        h3{
+            width: 50%;
+        }
+        p{
+            width: 50%;
+            padding-bottom: 20px;
+        }
+        iframe{
+            width: 50%;
+            height: 80%;
+        }
+    }
+    .about_content_text{
+        h3{
+            margin-top: 50px;
+        }
+        // h4{
+        //     justify-content: left;
+        // }
+        // p{
+        //     justify-content: center;
+        // }
+        .about_content_blocks{
+            display: flex;
+            .about_text{
+                border-top: none;
+                width: 33%;
+                margin: 20px;
+                margin-top: 130px;
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 700px) {
+    .nav_container{
+        .nav_ul{
+        background-color: transparent;
+        a{
+            color: $color3;
+        }
+    }
+    }
+}
