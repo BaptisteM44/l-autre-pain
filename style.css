@@ -113,7 +113,7 @@ button:after {
 
 .about {
   background-color: papayawhip;
-  height: 200vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,17 +124,8 @@ button:after {
   text-align: center;
 }
 
-.about h2 {
-  font-weight: 400;
-  padding-top: 20px;
-  font-size: 40px;
-  color: #2e3244;
-  text-transform: uppercase;
-}
-
 .about_content_text {
   height: auto;
-  padding-top: 20px;
   margin: 0 20px;
 }
 
@@ -142,16 +133,27 @@ button:after {
   height: 100vh;
 }
 
+.about_content_img h2 {
+  font-weight: 400;
+  margin: 20px auto;
+  font-size: 40px;
+  color: #2e3244;
+  text-transform: uppercase;
+}
+
 .about_content_img h3 {
   color: #2e3244;
-  font-size: clamp(18px, 4vw, 30px);
-  margin: 0 auto;
+  font-size: clamp(22px, 4vw, 30px);
+  margin: 20px auto;
   width: 80%;
   font-weight: 200;
 }
 
-.about_text {
-  height: 33vh;
+.about_explain {
+  height: auto;
+}
+
+.about_explain .about_explain_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,21 +168,19 @@ button:after {
   padding: 5px;
 }
 
-.about_text h4 {
-  font-size: 35px;
-  font-weight: 600;
+.about_explain .about_explain_text h4 {
+  font-size: 30px;
+  font-weight: 400;
   margin: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  text-align: left;
   color: #2e3244;
 }
 
-.about_text p {
-  font-size: 15px;
+.about_explain .about_explain_text p {
+  font-size: 14px;
   font-weight: 200;
   margin: 8px 0;
   display: -webkit-box;
@@ -430,7 +430,7 @@ h1 {
     display: -ms-flexbox;
     display: flex;
   }
-  .about_content_text .about_content_blocks .about_text {
+  .about_content_text .about_content_blocks .about_explain_text {
     border-top: none;
     width: 33%;
     margin: 20px;

@@ -121,59 +121,62 @@ button:after {
   //   -o-background-size: cover;
   //   background-size: cover;
   background-color: papayawhip;
-  height: 200vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
-  h2 {
-    font-weight: 400;
-    padding-top: 20px;
-    font-size: 40px;
-    color: $color1;
-    text-transform: uppercase;
-  }
 }
 .about_content_text {
   height: auto;
-  padding-top: 20px;
   margin: 0 20px;
 }
 .about_content_img {
   height: 100vh;
+  h2 {
+    font-weight: 400;
+    margin: 20px auto;
+    font-size: 40px;
+    color: $color1;
+    text-transform: uppercase;
+  }
   h3 {
     color: $color1;
-    font-size: clamp(18px, 4vw, 30px);
-    margin: 0 auto;
+    font-size: clamp(22px, 4vw, 30px);
+    margin: 20px auto;
     width: 80%;
     font-weight: 200;
   }
 }
-.about_text {
-  height: 33vh;
-  display: flex;
-  flex-direction: column;
-  margin: 17px;
-  font-size: 12px;
-  color: $color1;
-  border-top: 1px solid $color1;
-  padding: 5px;
-  h4 {
-    font-size: 35px;
-    font-weight: 600;
-    margin: 16px 0;
+.about_explain {
+  height: auto;
+  .about_explain_text {
+    // height: 33vh;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    margin: 17px;
+    font-size: 12px;
     color: $color1;
-  }
-  p {
-    font-size: 15px;
-    font-weight: 200;
-    margin: 8px 0;
-    display: flex;
-    justify-content: left;
-    text-align: left;
+    border-top: 1px solid $color1;
+    padding: 5px;
+    h4 {
+      font-size: 30px;
+      font-weight: 400;
+      margin: 16px 0;
+      display: flex;
+      text-align: left;
+      color: $color1;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 200;
+      margin: 8px 0;
+      display: flex;
+      justify-content: left;
+      text-align: left;
+    }
   }
 }
+
 // END ABOUT
 // LOCATION
 html {
@@ -369,7 +372,7 @@ h1 {
     // }
     .about_content_blocks {
       display: flex;
-      .about_text {
+      .about_explain_text {
         border-top: none;
         width: 33%;
         margin: 20px;
