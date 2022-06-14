@@ -58,6 +58,7 @@ html {
     font-weight: 300;
     position: absolute;
     bottom: 0;
+    right: 20px;
     color: white;
     font-size: clamp(30px, 4vw, 40px);
     margin: 100px 0;
@@ -360,8 +361,8 @@ h1 {
   }
   .about_content_img {
     img {
-      height: 74%;
-      margin: 50px;
+      height: 82%;
+      margin-left: 80px;
     }
   }
 }
