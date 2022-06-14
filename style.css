@@ -70,47 +70,6 @@ html {
   margin: 40px auto;
 }
 
-button {
-  min-width: 130px;
-  height: 40px;
-  color: #ffffff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  z-index: 0;
-  background: #ffffff;
-  overflow: hidden;
-  border: 2px solid #c5c6c6;
-  color: #2e3244;
-}
-
-button:hover {
-  color: #ffffff;
-}
-
-button:hover:after {
-  width: 100%;
-}
-
-button:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #516079;
-}
-
 .about {
   background-color: papayawhip;
   height: auto;
@@ -131,6 +90,7 @@ button:after {
 
 .about_content_img {
   height: 100vh;
+  border-bottom: 1px solid #2e3244;
 }
 
 .about_content_img h2 {
@@ -143,10 +103,14 @@ button:after {
 
 .about_content_img h3 {
   color: #2e3244;
-  font-size: clamp(22px, 4vw, 30px);
+  font-size: clamp(20px, 4vw, 30px);
   margin: 20px auto;
-  width: 80%;
   font-weight: 200;
+}
+
+.about_content_img img {
+  width: auto;
+  height: auto;
 }
 
 .about_explain {
@@ -161,15 +125,13 @@ button:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 17px;
+  margin: 17px auto;
   font-size: 12px;
   color: #2e3244;
-  border-top: 1px solid #2e3244;
-  padding: 5px;
 }
 
 .about_explain .about_explain_text h4 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
   margin: 16px 0;
   display: -webkit-box;
@@ -190,6 +152,11 @@ button:after {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
+}
+
+.about_explain .about_explain_text img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 html {
@@ -219,7 +186,7 @@ body {
 
 .location .location_title {
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   color: #ffffff;
   display: -webkit-box;
@@ -244,18 +211,19 @@ body {
 .sticky-container h3 {
   width: 80%;
   font-size: 27px;
-  font-weight: 200;
-  color: #c5c6c6;
-  border-bottom: 1px solid #c5c6c6;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
 }
 
 .sticky-container p {
   color: #ffffff;
-  width: 80%;
   font-size: 18px;
   font-weight: 100;
   text-align: left;
-  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .sticky-container iframe,
@@ -286,7 +254,6 @@ h1 {
   min-width: 100vw;
   width: 100vw;
   min-height: 85vh;
-  padding: 20px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +270,10 @@ h1 {
           flex-direction: column;
 }
 
+.location_content_placement .location_content_placement_city {
+  font-weight: 400;
+}
+
 .contact {
   height: 100vh;
   display: -webkit-box;
@@ -313,20 +284,6 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-}
-
-.contact .contact_title {
-  padding-top: 20px;
-  font-size: 40px;
-  font-weight: 300;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
 }
 
 .contact_content {
@@ -423,19 +380,37 @@ h1 {
     height: 50%;
   }
   .about_content_text h3 {
-    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 50px 180px;
+    text-align: end;
   }
-  .about_content_text .about_content_blocks {
+  .about_content_text .about_explain_text {
+    margin: 20px;
+  }
+  .about_content_text .about_explain_text h4 {
+    font-size: 33px;
+  }
+  .about_content_text .about_explain_text img {
+    width: 37%;
+  }
+  .about_content_text .about_explain_text p {
+    font-size: 16px;
+  }
+  .about_content_text .right_text {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 20px;
+  }
+  .about_content_img img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .about_content_text .about_content_blocks .about_explain_text {
-    border-top: none;
-    width: 33%;
-    margin: 20px;
-    margin-top: 130px;
-    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 74%;
   }
 }
 
@@ -445,6 +420,10 @@ h1 {
   }
   .nav_container .nav_ul a {
     color: #ffffff;
+  }
+  .about_content_img img {
+    height: 74%;
+    margin: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
