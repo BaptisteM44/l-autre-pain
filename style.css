@@ -405,9 +405,6 @@ h1 {
     width: 40%;
     font-size: 35px;
   }
-  .about_explain .about_explain_text img {
-    width: 30%;
-  }
   .about_explain .about_explain_text p {
     font-size: 18px;
   }
@@ -445,7 +442,7 @@ h1 {
     height: 82%;
   }
   .about_explain .about_explain_text img {
-    width: 37%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
