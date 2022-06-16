@@ -55,7 +55,7 @@ html {
   font-weight: 300;
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 0%;
   color: white;
   font-size: clamp(30px, 4vw, 40px);
   margin: 100px 0;
@@ -72,7 +72,7 @@ html {
 }
 
 .about {
-  background-color: papayawhip;
+  background-color: #f8f6f0;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,17 +89,17 @@ html {
   margin: 0 20px;
 }
 
-.about_content_img {
-  height: 100vh;
-  border-bottom: 1px solid #2e3244;
-}
-
-.about_content_img h2 {
+.about_content_text h2 {
+  height: 10vh;
   font-weight: 400;
   margin: 20px auto;
   font-size: 40px;
   color: #2e3244;
   text-transform: uppercase;
+}
+
+.about_content_img {
+  height: 90vh;
 }
 
 .about_content_img h3 {
@@ -110,12 +110,16 @@ html {
 }
 
 .about_content_img img {
-  width: auto;
-  height: auto;
+  height: 82%;
+}
+
+.about_2 {
+  background-color: #ded6c6;
 }
 
 .about_explain {
   height: auto;
+  margin: 0 20px;
 }
 
 .about_explain .about_explain_text {
@@ -134,7 +138,7 @@ html {
 .about_explain .about_explain_text h4 {
   font-size: 28px;
   font-weight: 400;
-  margin: 16px 0;
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +161,7 @@ html {
 
 .about_explain .about_explain_text img {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 html {
@@ -369,6 +373,9 @@ h1 {
 }
 
 @media screen and (min-width: 1180px) {
+  .homepage_texte p {
+    right: 10%;
+  }
   .sticky-container h3 {
     width: 50%;
   }
@@ -383,26 +390,37 @@ h1 {
   .about_content_text h3 {
     font-size: 35px;
     font-weight: 300;
-    margin: 50px 180px;
-    text-align: end;
+    margin-bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  .about_content_text .about_explain_text {
+  .about_explain .about_explain_text {
     margin: 20px;
   }
-  .about_content_text .about_explain_text h4 {
-    font-size: 33px;
+  .about_explain .about_explain_text h4 {
+    width: 40%;
+    font-size: 35px;
   }
-  .about_content_text .about_explain_text img {
-    width: 37%;
+  .about_explain .about_explain_text img {
+    width: 30%;
   }
-  .about_content_text .about_explain_text p {
-    font-size: 16px;
+  .about_explain .about_explain_text p {
+    font-size: 18px;
   }
-  .about_content_text .right_text {
+  .right_text {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
     margin: 20px;
+  }
+  .about_content_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .about_content_img img {
     display: -webkit-box;
@@ -412,6 +430,7 @@ h1 {
         -ms-flex-align: start;
             align-items: flex-start;
     height: 74%;
+    margin-left: 80px;
   }
 }
 
@@ -424,7 +443,9 @@ h1 {
   }
   .about_content_img img {
     height: 82%;
-    margin-left: 80px;
+  }
+  .about_explain .about_explain_text img {
+    width: 37%;
   }
 }
 /*# sourceMappingURL=style.css.map */

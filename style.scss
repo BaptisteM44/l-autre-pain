@@ -3,6 +3,8 @@ $color2: #c5c6c6;
 $color3: #ffffff;
 $color4: #f1895c;
 $color5: #516079;
+$color6: #f8f6f0;
+$color7: #ded6c6;
 
 * {
   font-family: "Lato", sans-serif;
@@ -58,7 +60,7 @@ html {
     font-weight: 300;
     position: absolute;
     bottom: 0;
-    right: 20px;
+    right: 0%;
     color: white;
     font-size: clamp(30px, 4vw, 40px);
     margin: 100px 0;
@@ -77,13 +79,7 @@ html {
 
 // ABOUT
 .about {
-  //   background: linear-gradient(#111, rgba(0, 0, 0, 0.5)),
-  //     url(images/second.jpg) no-repeat center center fixed;
-  //   background-size: cover;
-  //   -webkit-background-size: cover;
-  //   -o-background-size: cover;
-  //   background-size: cover;
-  background-color: papayawhip;
+  background-color: $color6;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -92,17 +88,17 @@ html {
 .about_content_text {
   height: auto;
   margin: 0 20px;
-}
-.about_content_img {
-  height: 100vh;
-  border-bottom: 1px solid $color1;
   h2 {
+    height: 10vh;
     font-weight: 400;
     margin: 20px auto;
     font-size: 40px;
     color: $color1;
     text-transform: uppercase;
   }
+}
+.about_content_img {
+  height: 90vh;
   h3 {
     color: $color1;
     font-size: clamp(20px, 4vw, 30px);
@@ -110,12 +106,15 @@ html {
     font-weight: 200;
   }
   img {
-    width: auto;
-    height: auto;
+    height: 82%;
   }
+}
+.about_2 {
+  background-color: $color7;
 }
 .about_explain {
   height: auto;
+  margin: 0 20px;
   .about_explain_text {
     display: flex;
     flex-direction: column;
@@ -125,7 +124,7 @@ html {
     h4 {
       font-size: 28px;
       font-weight: 400;
-      margin: 16px 0;
+      margin-bottom: 16px;
       display: flex;
       text-align: left;
       color: $color1;
@@ -140,7 +139,7 @@ html {
     }
     img {
       width: 80%;
-      margin: 0 auto;
+      margin: 20px auto;
     }
   }
 }
@@ -305,6 +304,11 @@ h1 {
 }
 
 @media screen and (min-width: 1180px) {
+  .homepage_texte {
+    p {
+      right: 10%;
+    }
+  }
   .sticky-container {
     h3 {
       width: 50%;
@@ -322,31 +326,39 @@ h1 {
     h3 {
       font-size: 35px;
       font-weight: 300;
-      margin: 50px 180px;
-      text-align: end;
-    }
-    .about_explain_text {
-      h4 {
-        font-size: 33px;
-      }
-      margin: 20px;
-      img {
-        width: 37%;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    .right_text {
+      margin-bottom: 200px;
+      display: flex;
       align-items: flex-end;
-      margin: 20px;
     }
   }
+  .about_explain {
+    .about_explain_text {
+      margin: 20px;
+      h4 {
+        width: 40%;
+        font-size: 35px;
+      }
+
+      img {
+        width: 30%;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .right_text {
+    align-items: flex-end;
+    margin: 20px;
+  }
   .about_content_img {
+    display: flex;
     img {
       display: flex;
       align-items: flex-start;
       height: 74%;
+      margin-left: 80px;
     }
   }
 }
@@ -362,7 +374,13 @@ h1 {
   .about_content_img {
     img {
       height: 82%;
-      margin-left: 80px;
+    }
+  }
+  .about_explain {
+    .about_explain_text {
+      img {
+        width: 37%;
+      }
     }
   }
 }
