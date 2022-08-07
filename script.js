@@ -10,6 +10,15 @@ gsap.to(sections, {
     pin: true,
     scrub: 1,
     snap: 1 / (sections.length - 1),
-    end: () => "+=" + document.querySelector(".location").offsetWidth
-  }
+    end: () => "+=" + document.querySelector(".location").offsetWidth,
+  },
+});
+gsap.to(".header_container", {
+  scale: 1.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".header_container",
+    scrub: true,
+    start: "bottom bottom",
+  },
 });
