@@ -9,8 +9,8 @@ html {
 }
 
 .header_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(images/first.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/first.jpg) no-repeat center center fixed;
+  background: url(images/first.jpg) -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), no-repeat center center fixed;
+  background: url(images/first.jpg) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   text-align: center;
@@ -182,8 +182,8 @@ body {
 }
 
 .location {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(images/third.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/third.jpg) no-repeat center center fixed;
+  background: url(images/third.jpg) -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), no-repeat center center fixed;
+  background: url(images/third.jpg) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
 }
