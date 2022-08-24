@@ -22,12 +22,21 @@ gsap.to(".header_container", {
     start: "bottom bottom",
   },
 });
-gsap.to(".about_content_img_scroll", {
-  scale: 1.2,
+gsap.to(".about_content_img", {
+  yPercent: 9,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",
     scrub: true,
-    start: "bottom bottom",
+    start: "center center",
+  },
+});
+gsap.to(".about_content_text h3", {
+  xPercent: 8,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about",
+    scrub: true,
+    start: "center center",
   },
 });

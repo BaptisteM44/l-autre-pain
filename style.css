@@ -29,7 +29,6 @@ html {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #ffffff;
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -41,7 +40,7 @@ html {
   font-weight: 300;
   text-transform: uppercase;
   padding: 14px;
-  color: #516079;
+  color: #ffffff;
   margin: auto 0;
   cursor: pointer;
 }
@@ -90,7 +89,6 @@ html {
 }
 
 .about_content_text h2 {
-  height: 10vh;
   font-weight: 400;
   margin: 20px auto;
   margin-top: 120px;
@@ -148,7 +146,7 @@ html {
 }
 
 .about_explain .about_explain_text p {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 200;
   margin: 8px 0;
   display: -webkit-box;

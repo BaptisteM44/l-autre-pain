@@ -35,17 +35,18 @@ html {
   .nav_ul {
     display: flex;
     justify-content: space-around;
-    background-color: $color3;
+    // background-color: $color1;
     height: auto;
     width: 100%;
     margin: 0 auto;
+    // box-shadow: inset 0px 0px 22px -6px $color3;
     a {
       text-decoration: none;
       font-size: clamp(12px, 2vw, 25px);
       font-weight: 300;
       text-transform: uppercase;
       padding: 14px;
-      color: $color5;
+      color: $color3;
       margin: auto 0;
       cursor: pointer;
     }
@@ -89,7 +90,6 @@ html {
   height: auto;
   margin: 0 20px;
   h2 {
-    height: 10vh;
     font-weight: 400;
     margin: 20px auto;
     margin-top: 120px;
@@ -131,7 +131,7 @@ html {
       color: $color1;
     }
     p {
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 200;
       margin: 8px 0;
       display: flex;
