@@ -18,10 +18,8 @@ html {
 
 // HEADER
 .header_container {
-  background: url(images/first.jpg)
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/first.jpg) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   height: 100vh;
@@ -36,11 +34,9 @@ html {
   .nav_ul {
     display: flex;
     justify-content: space-around;
-    // background-color: $color1;
     height: auto;
     width: 100%;
     margin: 0 auto;
-    // box-shadow: inset 0px 0px 22px -6px $color3;
     a {
       text-decoration: none;
       font-size: clamp(12px, 2vw, 25px);
@@ -165,9 +161,8 @@ body {
 }
 
 .location {
-  background: url(images/third.jpg)
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/third.jpg) no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   .location_title {
