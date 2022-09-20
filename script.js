@@ -13,17 +13,8 @@ gsap.to(sections, {
     end: () => "+=" + document.querySelector(".location").offsetWidth,
   },
 });
-gsap.to(".header_container", {
-  scale: 1.2,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".header_container",
-    scrub: true,
-    start: "bottom bottom",
-  },
-});
-gsap.to(".about_content_img", {
-  yPercent: 9,
+gsap.to(".about_content_img", "(min-width: 700px)", {
+  yPercent: 20,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",
@@ -31,8 +22,8 @@ gsap.to(".about_content_img", {
     start: "center center",
   },
 });
-gsap.to(".about_content_text h3", {
-  xPercent: 8,
+gsap.to(".about_content_right", "(min-width: 700px)", {
+  yPercent: 20,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",

@@ -9,8 +9,8 @@ html {
 }
 
 .header_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/first.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/first.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(/images/main.jpeg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/images/main.jpeg) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   height: 100vh;
@@ -45,24 +45,34 @@ html {
 }
 
 .homepage_texte {
-  height: auto;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
 }
 
-.homepage_texte p {
+.homepage_texte .homepage_texte_title {
   font-size: 40px;
   font-weight: 300;
-  position: absolute;
-  bottom: 0;
-  right: 0%;
-  color: white;
+  color: #2e3244;
   font-size: clamp(30px, 4vw, 40px);
-  margin: 100px 0;
+  margin: 0 auto;
+  height: 50px;
 }
 
-.homepage_texte p .homepage_texte_lien {
-  border-bottom: 1px solid #ffffff;
-  text-decoration: none;
-  color: #ffffff;
+.homepage_texte .title3 {
+  margin-top: 20px;
 }
 
 .homepage_content_btn {
@@ -70,7 +80,7 @@ html {
 }
 
 .about {
-  background-color: #f8f6f0;
+  background-color: #ffffff;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,86 +90,59 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  height: 100vh;
+}
+
+.about_content_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
 }
 
 .about_content_text {
   height: auto;
-  margin: 0 20px;
+  margin: auto 20px;
 }
 
 .about_content_text h2 {
   font-weight: 400;
   margin: 20px auto;
-  margin-top: 120px;
   font-size: 40px;
   color: #2e3244;
   text-transform: uppercase;
 }
 
 .about_content_img {
-  height: 90vh;
-}
-
-.about_content_img h3 {
-  color: #2e3244;
-  font-size: clamp(20px, 4vw, 30px);
-  margin: 20px auto;
-  font-weight: 200;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
 }
 
 .about_content_img img {
-  height: 82%;
+  height: 57vh;
 }
 
-.about_2 {
-  background-color: #ded6c6;
-}
-
-.about_explain {
-  height: auto;
-  margin: 0 20px;
-}
-
-.about_explain .about_explain_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 17px auto;
-  font-size: 12px;
-  color: #2e3244;
-}
-
-.about_explain .about_explain_text h4 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.about_content_right {
+  width: 50%;
   text-align: left;
+  margin: auto 0;
+}
+
+.about_content_right h3 {
   color: #2e3244;
+  font-size: clamp(20px, 4vw, 27px);
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
-.about_explain .about_explain_text p {
-  font-size: 17px;
-  font-weight: 200;
-  margin: 8px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  text-align: left;
-}
-
-.about_explain .about_explain_text img {
-  width: 80%;
-  margin: 20px auto;
+.about_content_right p {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 html {
@@ -181,17 +164,14 @@ body {
 }
 
 .location {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/third.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/third.jpg) no-repeat center center fixed;
-  background-size: cover;
-  background-size: cover;
+  background-color: #ded6c6;
 }
 
 .location .location_title {
   padding-top: 20px;
   font-size: 36px;
   font-weight: 400;
-  color: #ffffff;
+  color: #2e3244;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,13 +195,13 @@ body {
   width: 80%;
   font-size: 27px;
   font-weight: 300;
-  color: #ffffff;
+  color: #2e3244;
   margin-bottom: 30px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #2e3244;
 }
 
 .sticky-container p {
-  color: #ffffff;
+  color: #2e3244;
   font-size: 18px;
   font-weight: 100;
   text-align: left;
@@ -274,7 +254,7 @@ h1 {
 }
 
 .location_content_placement .location_content_placement_city {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .contact {
@@ -300,6 +280,7 @@ h1 {
 
 .contact_content_boulanger {
   margin: 30px 0;
+  color: #2e3244;
 }
 
 .contact_content_boulanger h3 {
@@ -311,12 +292,12 @@ h1 {
 .contact_content_boulanger p {
   font-weight: 100;
   font-size: 25px;
-  text-align: start;
   margin-top: 8px;
 }
 
 .contact_content_adress {
   margin: 50px 0;
+  color: #2e3244;
 }
 
 .contact_content_adress h3 {
@@ -328,7 +309,6 @@ h1 {
 .contact_content_adress p {
   font-weight: 100;
   font-size: 25px;
-  text-align: start;
   margin-top: 8px;
 }
 
@@ -367,7 +347,10 @@ h1 {
 }
 
 .footer_content ul li {
+  color: #2e3244;
   padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 1180px) {
@@ -385,26 +368,15 @@ h1 {
     width: 50%;
     height: 50%;
   }
-  .about_content_text h3 {
-    font-size: 35px;
-    font-weight: 300;
-    margin-bottom: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .about_explain .about_explain_text {
+  .about_explain .about_explain_right {
     margin: 20px;
   }
-  .about_explain .about_explain_text h4 {
+  .about_explain .about_explain_right h4 {
     width: 40%;
     font-size: 35px;
   }
-  .about_explain .about_explain_text p {
-    font-size: 18px;
+  .about_explain .about_explain_right p {
+    font-size: 16px;
   }
   .right_text {
     -webkit-box-align: end;
@@ -412,35 +384,63 @@ h1 {
             align-items: flex-end;
     margin: 20px;
   }
-  .about_content_img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+
+@media screen and (max-width: 980px) {
+  .about_content_text h2 {
+    font-size: 28px;
   }
-  .about_content_img img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 74%;
-    margin-left: 80px;
+  .about_content_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about_content_div .about_content_img img {
+    height: 100%;
+  }
+  .about_content_div .about_content_right {
+    width: auto;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .about_content_div .about_content_right h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .nav_container .nav_ul {
     background-color: transparent;
   }
   .nav_container .nav_ul a {
     color: #ffffff;
   }
-  .about_content_img img {
-    height: 82%;
+  .about_content_div .about_content_right h3 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .about_content_div .about_content_right p {
+    font-size: 12px;
+  }
+  .location .location_title {
+    font-size: 32px;
   }
   .about_explain .about_explain_text img {
     width: 30%;
+  }
+  .sticky-container p {
+    font-size: 14px;
+  }
+  .footer_content ul li {
+    padding: 7px;
+    font-size: 10px;
+    font-weight: 300;
   }
 }
 /*# sourceMappingURL=style.css.map */
