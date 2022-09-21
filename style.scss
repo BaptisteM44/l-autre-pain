@@ -83,7 +83,8 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 .about_content_div {
   display: flex;
