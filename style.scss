@@ -8,11 +8,22 @@ $color4: #111111;
   font-family: "Prompt", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-
 html {
-  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
-
+body {
+  overflow-y: visible;
+  position: relative;
+  height: auto;
+}
+html,
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  margin: 0;
+}
 // HEADER
 .header_container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
@@ -85,9 +96,10 @@ html {
 }
 .about_content_div {
   display: flex;
+  margin-top: 60px;
 }
 .about_content_text {
-  margin: auto 20px;
+  margin: 20px;
   h2 {
     font-weight: 400;
     margin: 20px auto;
@@ -123,21 +135,6 @@ html {
 }
 // END ABOUT
 // LOCATION
-html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-body {
-  overflow-y: visible;
-  position: relative;
-  height: auto;
-}
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
-}
 
 .location {
   background-color: $color2;
@@ -326,6 +323,8 @@ h1 {
   .about_content_div {
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+
     .about_content_img {
       img {
         height: 100%;

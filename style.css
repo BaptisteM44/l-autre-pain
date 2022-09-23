@@ -5,7 +5,22 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-y: visible;
+  position: relative;
+  height: auto;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .header_container {
@@ -98,10 +113,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
 }
 
 .about_content_text {
-  margin: auto 20px;
+  margin: 20px;
 }
 
 .about_content_text h2 {
@@ -142,24 +158,6 @@ html {
   font-weight: 100;
   margin-bottom: 20px;
   text-align: center;
-}
-
-html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-body {
-  overflow-y: visible;
-  position: relative;
-  height: auto;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
 }
 
 .location {
@@ -397,6 +395,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 20px;
   }
   .about_content_div .about_content_img img {
     height: 100%;
