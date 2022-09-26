@@ -397,6 +397,9 @@ h1 {
             align-items: center;
     margin-top: 20px;
   }
+  .about_content_div .about_content_img {
+    width: none;
+  }
   .about_content_div .about_content_img img {
     height: 100%;
   }
