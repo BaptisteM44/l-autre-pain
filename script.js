@@ -13,24 +13,24 @@ gsap.to(sections, {
     end: () => "+=" + document.querySelector(".location").offsetWidth,
   },
 });
-// gsap.to(".about_content_img", {
-//   yPercent: 30,
-//   duration: 1,
-//   scrollTrigger: {
-//     trigger: ".about",
-//     scrub: true,
-//     start: "top center",
-//   },
-// });
-// gsap.to(".about_content_right", {
-//   yPercent: 40,
-//   duration: 1,
-//   scrollTrigger: {
-//     trigger: ".about",
-//     scrub: true,
-//     start: "top center",
-//   },
-// });
+gsap.to(".about_content_img", {
+  yPercent: 20,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about",
+    scrub: true,
+    start: "top top",
+  },
+});
+gsap.to(".about_content_right", {
+  yPercent: 17,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about",
+    scrub: true,
+    start: "top top",
+  },
+});
 const tl = gsap.timeline();
 
 tl.from(".title1, img", 2, {
