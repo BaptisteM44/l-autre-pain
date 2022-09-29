@@ -13,7 +13,11 @@ gsap.to(sections, {
     end: () => "+=" + document.querySelector(".location").offsetWidth,
   },
 });
-gsap.to(".about_content_img", {
+
+ScrollTrigger.matchMedia({
+
+  "(min-width: 780px)": function(){
+   gsap.to(".about_content_img", {
   yPercent: 20,
   duration: 1,
   scrollTrigger: {
@@ -30,7 +34,12 @@ gsap.to(".about_content_right", {
     scrub: true,
     start: "top top",
   },
+}); 
+  }
+  
 });
+
+
 const tl = gsap.timeline();
 
 tl.from(".title1, img", 2, {
