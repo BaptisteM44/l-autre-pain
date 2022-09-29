@@ -26,7 +26,7 @@ body {
 }
 // HEADER
 .header_container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  background: linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.3)),
     url(images/main.webp) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
@@ -35,6 +35,9 @@ body {
   .header_logo {
     padding-top: 40px;
     padding-bottom: 40px;
+    img{
+      width: 200px;
+    }
   }
 }
 
@@ -47,11 +50,11 @@ body {
     margin: 0 auto;
     a {
       text-decoration: none;
-      font-size: clamp(12px, 2vw, 25px);
-      font-weight: 300;
+      font-size: clamp(14px, 2vw, 25px);
+      font-weight: 500;
       text-transform: uppercase;
       padding: 14px;
-      color: $color3;
+      color: $color4;
       margin: auto 0;
       cursor: pointer;
     }
@@ -68,11 +71,12 @@ body {
   height: 60vh;
   .homepage_texte_title {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
     color: $color4;
     font-size: clamp(30px, 4vw, 40px);
     margin: 0 auto;
     height: 50px;
+    opacity: 1;
   }
   .title3 {
     margin-top: 20px;
@@ -122,17 +126,11 @@ body {
   height: auto;
   text-align: left;
   margin: auto 0;
-  h3 {
+  p {
     color: $color1;
     font-size: clamp(20px, 4vw, 27px);
     font-weight: 300;
     margin-bottom: 40px;
-  }
-  p {
-    font-size: 14px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    text-align: center;
   }
 }
 // END ABOUT
@@ -348,14 +346,14 @@ h1 {
   }
 }
 @media screen and (max-width: 700px) {
-  .nav_container {
-    .nav_ul {
-      background-color: transparent;
-      a {
-        color: $color3;
+  .header_container{
+    .header_logo {
+      img{
+        width: auto;
       }
     }
   }
+  
   .about{
     height: 115vh;
   }

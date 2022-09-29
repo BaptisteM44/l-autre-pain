@@ -24,8 +24,8 @@ body {
 }
 
 .header_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(images/main.webp) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(images/main.webp) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.3))), url(images/main.webp) no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url(images/main.webp) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   height: 100vh;
@@ -35,6 +35,10 @@ body {
 .header_container .header_logo {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.header_container .header_logo img {
+  width: 200px;
 }
 
 .nav_container .nav_ul {
@@ -50,11 +54,11 @@ body {
 
 .nav_container .nav_ul a {
   text-decoration: none;
-  font-size: clamp(12px, 2vw, 25px);
-  font-weight: 300;
+  font-size: clamp(14px, 2vw, 25px);
+  font-weight: 500;
   text-transform: uppercase;
   padding: 14px;
-  color: #ffffff;
+  color: #111111;
   margin: auto 0;
   cursor: pointer;
 }
@@ -79,11 +83,12 @@ body {
 
 .homepage_texte .homepage_texte_title {
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 400;
   color: #111111;
   font-size: clamp(30px, 4vw, 40px);
   margin: 0 auto;
   height: 50px;
+  opacity: 1;
 }
 
 .homepage_texte .title3 {
@@ -148,18 +153,11 @@ body {
   margin: auto 0;
 }
 
-.about_content_right h3 {
+.about_content_right p {
   color: #2e3244;
   font-size: clamp(20px, 4vw, 27px);
   font-weight: 300;
   margin-bottom: 40px;
-}
-
-.about_content_right p {
-  font-size: 14px;
-  font-weight: 100;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .location {
@@ -417,11 +415,8 @@ h1 {
 }
 
 @media screen and (max-width: 700px) {
-  .nav_container .nav_ul {
-    background-color: transparent;
-  }
-  .nav_container .nav_ul a {
-    color: #ffffff;
+  .header_container .header_logo img {
+    width: auto;
   }
   .about {
     height: 115vh;
