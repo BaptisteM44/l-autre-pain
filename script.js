@@ -23,7 +23,7 @@ gsap.to(".about_content_img", {
   },
 });
 gsap.to(".about_content_right", {
-  yPercent: 30,
+  yPercent: 40,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",

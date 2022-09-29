@@ -134,7 +134,7 @@ body {
           align-items: center;
   margin: auto 0;
   width: 50%;
-  height: 50vh;
+  height: auto;
 }
 
 .about_content_img img {
@@ -143,7 +143,7 @@ body {
 
 .about_content_right {
   width: 50%;
-  height: 50vh;
+  height: auto;
   text-align: left;
   margin: auto 0;
 }
