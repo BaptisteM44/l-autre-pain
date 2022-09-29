@@ -112,12 +112,14 @@ body {
   align-items: center;
   margin: auto 0;
   width: 50%;
+  height: 50vh;
   img {
     height: 57vh;
   }
 }
 .about_content_right {
   width: 50%;
+  height: 50vh;
   text-align: left;
   margin: auto 0;
   h3 {
@@ -326,7 +328,7 @@ h1 {
     margin-top: 20px;
 
     .about_content_img {
-      width: none;
+      height: auto;
       img {
         height: 100%;
       }
@@ -353,6 +355,9 @@ h1 {
         color: $color3;
       }
     }
+  }
+  .about{
+    height: 115vh;
   }
   .about_content_div {
     .about_content_right {
