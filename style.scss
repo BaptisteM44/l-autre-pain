@@ -115,7 +115,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: auto;
   min-height: 100vh;
 }
 .about_content_div {
@@ -348,6 +347,7 @@ h1 {
 
     .about_content_img {
       height: auto;
+      width: auto;
       img {
         height: 100%;
       }
@@ -370,10 +370,6 @@ h1 {
         width: auto;
       }
     }
-  }
-  
-  .about{
-    height: 115vh;
   }
   .about_content_div {
     .about_content_right {
