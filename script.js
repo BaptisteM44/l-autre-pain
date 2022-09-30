@@ -41,7 +41,7 @@ gsap.to(".about_content_right", {
 
 const tl = gsap.timeline();
 
-tl.from(".title1, img", 2, {
+tl.from(".title1, .header_logo", 2, {
   y: 80,
   ease: "power4.out",
   delay: 0.6,
