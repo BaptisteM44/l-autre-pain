@@ -36,7 +36,6 @@ gsap.to(".about_content_right", {
   },
 }); 
   }
-  
 });
 
 

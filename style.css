@@ -374,9 +374,6 @@ h1 {
 }
 
 @media screen and (min-width: 1180px) {
-  .homepage_texte p {
-    right: 10%;
-  }
   .sticky-container h3 {
     width: 50%;
   }
@@ -407,6 +404,9 @@ h1 {
 }
 
 @media screen and (max-width: 980px) {
+  .header_container {
+    background-attachment: scroll;
+  }
   .about_content_text h2 {
     font-size: 28px;
   }
