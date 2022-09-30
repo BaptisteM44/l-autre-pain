@@ -3,6 +3,7 @@
   font-family: "Prompt", sans-serif;
   font-family: "Roboto", sans-serif;
   list-style-type: none;
+  text-decoration: none;
 }
 
 html {
@@ -38,11 +39,6 @@ body {
   padding-bottom: 40px;
 }
 
-.header_container .header_logo img {
-  width: 200px;
-  height: 200px;
-}
-
 .nav_container .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,10 +48,10 @@ body {
   height: auto;
   width: 100%;
   margin: 0 auto;
+  padding: 0px;
 }
 
 .nav_container .nav_ul a {
-  text-decoration: none;
   font-size: clamp(14px, 2vw, 25px);
   font-weight: 500;
   text-transform: uppercase;
@@ -348,7 +344,6 @@ h1 {
 }
 
 .contact_content_social a {
-  text-decoration: none;
   color: #2e3244;
   font-size: 35px;
 }
