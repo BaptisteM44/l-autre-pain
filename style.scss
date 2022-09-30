@@ -7,6 +7,7 @@ $color4: #111111;
   font-family: "Lato", sans-serif;
   font-family: "Prompt", sans-serif;
   font-family: "Roboto", sans-serif;
+  list-style-type: none;
 }
 html {
   overflow-y: scroll;
@@ -37,6 +38,7 @@ body {
     padding-bottom: 40px;
     img{
       width: 200px;
+      height: 200px;
     }
   }
 }
@@ -160,12 +162,16 @@ body {
   background-color: $color2;
   .location_title {
     padding-top: 20px;
-    font-size: 36px;
-    font-weight: 400;
-    color: $color1;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
+    h2{
+      
+      font-size: 36px;
+      font-weight: 400;
+      color: $color1;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+    
   }
 }
 .sticky-container {

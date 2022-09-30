@@ -2,6 +2,7 @@
   font-family: "Lato", sans-serif;
   font-family: "Prompt", sans-serif;
   font-family: "Roboto", sans-serif;
+  list-style-type: none;
 }
 
 html {
@@ -39,6 +40,7 @@ body {
 
 .header_container .header_logo img {
   width: 200px;
+  height: 200px;
 }
 
 .nav_container .nav_ul {
@@ -189,6 +191,9 @@ body {
 
 .location .location_title {
   padding-top: 20px;
+}
+
+.location .location_title h2 {
   font-size: 36px;
   font-weight: 400;
   color: #2e3244;
