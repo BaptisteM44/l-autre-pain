@@ -364,6 +364,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0px;
 }
 
 .footer_content ul li {
@@ -425,7 +426,8 @@ h1 {
     width: auto;
   }
   .about_content_div .about_content_img img {
-    height: 100%;
+    height: auto;
+    width: auto;
   }
   .about_content_div .about_content_right {
     width: auto;
