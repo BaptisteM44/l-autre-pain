@@ -163,7 +163,8 @@ body {
 }
 
 .about_content_img img {
-  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about_content_right {
@@ -422,12 +423,11 @@ h1 {
     margin-top: 20px;
   }
   .about_content_div .about_content_img {
-    height: auto;
     width: auto;
   }
   .about_content_div .about_content_img img {
-    height: auto;
-    width: auto;
+    width: 300px;
+    height: 200px;
   }
   .about_content_div .about_content_right {
     width: auto;
