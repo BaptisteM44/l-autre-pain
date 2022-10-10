@@ -165,6 +165,10 @@ body {
 .about_content_img img {
   -o-object-fit: cover;
      object-fit: cover;
+  WIDTH: -webkit-fill-available;
+  padding: 20px;
+  height: -webkit-fill-available;
+  border-radius: 10px;
 }
 
 .about_content_right {
@@ -235,6 +239,7 @@ body {
 .sticky-container img {
   width: 50%;
   height: 50%;
+  border-radius: 10px;
 }
 
 .vertical-section {
@@ -428,8 +433,8 @@ h1 {
     width: auto;
   }
   .about_content_div .about_content_img img {
-    width: 300px;
-    height: 200px;
+    width: 58%;
+    padding: 0px;
   }
   .about_content_div .about_content_right {
     width: auto;
@@ -453,6 +458,9 @@ h1 {
   }
   .about_content_div .about_content_right p {
     margin-bottom: 20px;
+  }
+  .about_content_div .about_content_img img {
+    width: 80%;
   }
   .location .location_title {
     font-size: 32px;
