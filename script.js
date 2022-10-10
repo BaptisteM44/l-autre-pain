@@ -16,7 +16,7 @@ ScrollTrigger.matchMedia({
 
   "(min-width: 780px)": function(){
    gsap.to(".about_content_img", {
-  yPercent: 20,
+  yPercent: 25,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",
@@ -25,7 +25,7 @@ ScrollTrigger.matchMedia({
   },
 });
 gsap.to(".about_content_right", {
-  yPercent: 17,
+  yPercent: 50,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",
