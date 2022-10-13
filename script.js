@@ -25,7 +25,7 @@ ScrollTrigger.matchMedia({
   },
 });
 gsap.to(".about_content_right", {
-  yPercent: 50,
+  yPercent: 30,
   duration: 1,
   scrollTrigger: {
     trigger: ".about",
