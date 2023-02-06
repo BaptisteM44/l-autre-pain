@@ -17,6 +17,7 @@ body {
   overflow-y: visible;
   position: relative;
   height: auto;
+  overscroll-behavior: none;
 }
 html,
 body {
@@ -164,6 +165,7 @@ body {
 
 .location {
   background-color: $color2;
+  overscroll-behavior: none;
   .location_title {
     padding-top: 20px;
     h2{
