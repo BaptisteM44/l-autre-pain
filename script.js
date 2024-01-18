@@ -37,24 +37,26 @@ gsap.to(".about_content_right", {
 });
 
 
-const tl = gsap.timeline();
+const tl = gsap.timeline({ delay: 0.6 });
 
-tl.from(".title1, .header_logo", 2, {
+tl.from(".title1, .header_logo", {
+  duration: 2,
   y: 80,
   ease: "power4.out",
-  delay: 0.6,
   skewY: 4,
-  opacity:0,
-  stagger: {
-    amount: 0.3
-  }
+  opacity: 0,
+  stagger: 0.3
 })
-.from(".nav_ul", 2, {
+.from(".nav_ul", {
+  duration: 2,
   x: 80,
   ease: "power4.out",
-  delay: -1.8,
-  opacity:0,
-  stagger: {
-    amount: 0
+  opacity: 0
+}, "-=1.8"); // Ici, utilisation de la position relative pour l'animation de .nav_ul
+
+// Assurez-vous que les animations ne sont pas exécutées inutilement sur des appareils inadaptés
+ScrollTrigger.matchMedia({
+  "(min-width: 780px)": function() {
+    // Animations spécifiques pour les appareils de largeur supérieure à 780px
   }
-})
+});

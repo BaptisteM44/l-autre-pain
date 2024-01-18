@@ -17,7 +17,6 @@ body {
   overflow-y: visible;
   position: relative;
   height: auto;
-  overscroll-behavior: none;
 }
 html,
 body {
@@ -27,8 +26,7 @@ body {
 }
 // HEADER
 .header_container {
-  background: linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.5)),
-    url(images/main.webp) no-repeat center center fixed;
+  background: url(images/main.webp) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   height: 100vh;
@@ -36,10 +34,6 @@ body {
   .header_logo {
     padding-top: 40px;
     padding-bottom: 40px;
-    // img{
-    //   width: 242px;
-    //   height: 210px;
-    // }
   }
 }
 
@@ -52,11 +46,11 @@ body {
     margin: 0 auto;
     padding:0px;
     a {
-      font-size: clamp(14px, 2vw, 25px);
-      font-weight: 500;
+      font-size: clamp(14px, 2vw, 30px);
+      font-weight: 300;
       text-transform: uppercase;
       padding: 2px;
-      color: $color4;
+      color: $color3;
       margin: auto 0;
       cursor: pointer;
       position: relative;
@@ -73,7 +67,7 @@ body {
         width: 100%;
         height: 3px;
         transform: scaleY(0);
-    background-color: $color4;
+    background-color: $color3;
     transition: transform 0.3s;
 }
 
@@ -91,11 +85,12 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 60vh;
+  padding-top: 8em;
   .homepage_texte_title {
     font-size: 40px;
-    font-weight: 400;
-    color: $color4;
-    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 300;
+    color: $color3;
+    font-size: clamp(30px, 4vw, 60px);
     margin: 10px auto;
     height: 50px;
     opacity: 1;
